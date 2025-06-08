@@ -7,7 +7,7 @@ const app = express();
 
 // Enable CORS for your frontend origin
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://bro-room.onrender.com',
   methods: ['GET', 'POST'],
 }));
 
@@ -15,7 +15,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: 'http://localhost:5173',
+    origin: 'https://bro-room.onrender.com',
     methods: ['GET', 'POST'],
   }
 });
